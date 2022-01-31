@@ -16,7 +16,42 @@ $ ls<ENTER>
 Copy and paste the output of ls below.
 ----------
 
-
+'3D Objects'/
+ ansel/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{71608f52-f178-11eb-ac56-e02be9d56659}.TM.blf
+ NTUSER.DAT{71608f52-f178-11eb-ac56-e02be9d56659}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{71608f52-f178-11eb-ac56-e02be9d56659}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Soundly Audio'/
+'Soundly Data'/
+ source/
+'Start Menu'@
+ Templates@
+ Videos/
+ Zomboid/
 
 
 
@@ -29,6 +64,8 @@ $ ls -l Documents<ENTER>
 Copy and paste the first *two lines* of output below.
 ----------
 
+total 37
+drwxr-xr-x 1 HabinPark 1049089   0 Sep 14 10:01  Adobe/
 
 
 
@@ -42,7 +79,8 @@ $ ls -a Documents
 Copy and paste the first *two lines* of output below.
 ----------
 
-
+ ./                          desktop.ini          'My Kindle Content'/  'Saved Games'/
+ ../                         GitHub/              'My Music'@           'Unreal Projects'/
 
 
 
@@ -55,7 +93,7 @@ $ ls doesnotexist
 Copy and paste the output below.
 ----------
 
-
+ls: cannot access 'doesnotexist': No such file or directory
 
 
 
@@ -64,6 +102,7 @@ Copy and paste the output below.
 5.  What key do I press to go to the previous command?
 ----------
 
+up arrow
 
 
 
@@ -73,14 +112,15 @@ Copy and paste the output below.
 6.  Name two flags/options that we used in this exercise.
 ----------
 
-
+-l
+-a
 
 
 ==========
 7.  What was the main command that we used throughout this exercise?
 ----------
 
-
+ls
 
 
 
@@ -89,7 +129,7 @@ Copy and paste the output below.
 8.  What's one an argument that we've so far passed to a command?
 ----------
 
-
+Documents
 
 
 
@@ -102,7 +142,7 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
-
+bash: foo: command not found
 
 
 
@@ -115,7 +155,7 @@ Copy and paste the output below.
 Copy and paste the output below.
 ----------
 
-
+bash: foo: command not found
 
 
 
@@ -127,6 +167,11 @@ $ ls -a Desktop
 
 Identify the command, flag, argument, and prompt:
 ----------
+
+command: ls
+flag: -a
+arguement: Desktop
+prompt: $
 
 
 
@@ -144,7 +189,7 @@ Follow the instructions line-by-line.
 12. Open a new terminal window. Create a directory called mtec1003. What command did you use?
 ----------
 
-
+mkdir mtec1003
 
 
 
@@ -152,7 +197,7 @@ Follow the instructions line-by-line.
 13. Change your directory so that you're in mtec1003. What command did you use?
 ----------
 
-
+cd mtec1003
 
 
 
@@ -169,7 +214,7 @@ If it doesn't ask for help before moving on!
 Copy and paste the output of pwd below.
 ----------
 
-
+/c/Users/habinpark/mtec1003
 
 
 
@@ -183,7 +228,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+animals/
 
 
 
@@ -197,7 +242,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+animals/  food/
 
 
 
@@ -211,7 +256,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+animals/  foo/  food/
 
 
 
@@ -225,7 +270,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+/c/Users/habinpark/mtec1003/foo/bar/baz/qux
 
 
 
@@ -239,7 +284,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+/c/Users/habinpark/mtec1003/foo/bar
 
 
 
@@ -253,7 +298,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+/c/Users/habinpark/mtec1003/foo/bar/baz/qux
 
 
 
@@ -267,7 +312,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+/c/Users/habinpark/mtec1003
 
 
 
@@ -282,7 +327,9 @@ $ ls -l
 Copy and paste the first 3 lines from the output into the space below.
 ----------
 
-
+total 0
+drwxr-xr-x 1 HabinPark 1049089 0 Jan 31 16:24 foo/
+drwxr-xr-x 1 HabinPark 1049089 0 Jan 31 16:24 food/
 
 
 
@@ -296,7 +343,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+/c/Users/habinpark
 
 
 
@@ -310,7 +357,8 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+bash: cd: /Volumes: No such file or directory
+/c/Users/habinpark
 
 
 
@@ -324,7 +372,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+bash: cd: /unknown_folder: No such file or directory
 
 
 
@@ -338,7 +386,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+/c/Users/habinpark/mtec1003
 
 
 
@@ -351,17 +399,17 @@ $ hostname
 Copy and paste the output into the space below.
 ----------
 
-
+L23278
 
 
 
 
 ==========
-28. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
+28. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
-
-
+pwd
+/c/Users/habinpark/mtec1003
 
 
 
@@ -391,7 +439,7 @@ lemon
 Write the one command you used below:
 ----------
 
-
+mkdir -p pineapple/orange/strawberry/lemon
 
 
 
@@ -402,7 +450,7 @@ Write the one command you used below:
 Write the command you used to create the directory below:
 ----------
 
-
+mkdir aardvark
 
 
 
@@ -413,7 +461,13 @@ Write the command you used to create the directory below:
 What is the modified date of the aardvark directory?
 ----------
 
+total 0
+drwxr-xr-x 1 HabinPark 1049089 0 Jan 31 16:46 aardvark/
+drwxr-xr-x 1 HabinPark 1049089 0 Jan 31 16:24 foo/
+drwxr-xr-x 1 HabinPark 1049089 0 Jan 31 16:24 food/
+drwxr-xr-x 1 HabinPark 1049089 0 Jan 31 16:45 pineapple/
 
+Jan 31 16:46
 
 
 
@@ -428,7 +482,7 @@ What is the modified date of the aardvark directory?
 What command did you use?
 ----------
 
-
+mkdir -p baz/bar/foo
 
 
 
@@ -439,7 +493,7 @@ What command did you use?
 What command did you use?
 ----------
 
-
+cd baz/bar/foo
 
 
 
@@ -450,7 +504,7 @@ What command did you use?
 What command did you use?
 ----------
 
-
+cd ../..
 
 
 
@@ -459,7 +513,7 @@ What command did you use?
 36. What command is used to delete empty directories?
 ----------
 
-
+rmdir
 
 
 
@@ -468,7 +522,7 @@ What command did you use?
 37. What command is used to print out your current working directory?
 ----------
 
-
+pwd
 
 
 
@@ -477,7 +531,7 @@ What command did you use?
 38. What flag do I pass to ls to print out all files?
 ----------
 
-
+-a
 
 
 
@@ -487,7 +541,7 @@ What command did you use?
 ----------
 
 
-
+cd ~
 
 
 
@@ -495,7 +549,7 @@ What command did you use?
 40. What's a pathname?
 ----------
 
-
+A pathname is the directory that describes the location of a file
 
 
 
@@ -504,7 +558,7 @@ What command did you use?
 41. What is a directory?
 ----------
 
-
+a directory is cataloging structure on a file system that references other files and potentially other directories. Usually used to organize files
 
 
 
@@ -512,3 +566,5 @@ What command did you use?
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+
+/c/Users/habinpark/Downloads
